@@ -29,6 +29,7 @@ class SettingsPage(QWidget):
         layout.addLayout(form)
 
         self.btn_save = QPushButton("Save settings")
+        self.btn_save.setObjectName("primary")
         self.btn_save.clicked.connect(self._save)
         layout.addWidget(self.btn_save)
         layout.addStretch()

@@ -41,6 +41,7 @@ class ParserPage(QWidget):
         self.chat_input.setPlaceholderText("https://t.me/... or chat ID")
         toolbar.addWidget(self.chat_input)
         self.btn_load = QPushButton("Load participants")
+        self.btn_load.setObjectName("primary")
         self.btn_load.clicked.connect(self._load)
         toolbar.addWidget(self.btn_load)
         self.btn_stop = QPushButton("Stop")

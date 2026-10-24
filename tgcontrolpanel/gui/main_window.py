@@ -30,6 +30,7 @@ from .parser_view import ParserPage
 from .proxies_view import ProxiesPage
 from .sender_view import SenderPage
 from .settings_view import SettingsPage
+from .theme import DARK_STYLESHEET
 
 
 class MainWindow(QMainWindow):
@@ -37,6 +38,7 @@ class MainWindow(QMainWindow):
         super().__init__()
         self.setWindowTitle(APP_DISPLAY_NAME)
         self.resize(1200, 800)
+        self.setStyleSheet(DARK_STYLESHEET)
 
         # Core services
         self.db = Database()

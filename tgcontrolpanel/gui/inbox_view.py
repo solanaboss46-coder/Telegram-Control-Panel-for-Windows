@@ -76,6 +76,7 @@ class InboxPage(QWidget):
         self.msg_input.setFixedHeight(60)
         self.msg_input.setPlaceholderText("Message...")
         self.btn_send = QPushButton("Send")
+        self.btn_send.setObjectName("primary")
         self.btn_send.clicked.connect(self._send)
         send_panel.addWidget(self.msg_input)
         send_panel.addWidget(self.btn_send)

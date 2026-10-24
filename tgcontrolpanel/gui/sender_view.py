@@ -52,8 +52,10 @@ class SenderPage(QWidget):
         self.btn_preview = QPushButton("Preview")
         self.btn_preview.clicked.connect(self._preview)
         self.btn_start = QPushButton("Start")
+        self.btn_start.setObjectName("primary")
         self.btn_start.clicked.connect(self._start)
         self.btn_stop = QPushButton("Stop")
+        self.btn_stop.setObjectName("danger")
         self.btn_stop.clicked.connect(self._stop)
         self.btn_stop.setEnabled(False)
         for b in (self.btn_preview, self.btn_start, self.btn_stop):

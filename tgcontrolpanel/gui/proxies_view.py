@@ -73,6 +73,7 @@ class ProxiesPage(QWidget):
 
         toolbar = QHBoxLayout()
         self.btn_add = QPushButton("Add proxy")
+        self.btn_add.setObjectName("primary")
         self.btn_edit = QPushButton("Edit")
         self.btn_delete = QPushButton("Delete")
         self.btn_test = QPushButton("Test connection")

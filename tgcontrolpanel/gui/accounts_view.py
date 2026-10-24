@@ -72,6 +72,7 @@ class AccountsPage(QWidget):
 
         toolbar = QHBoxLayout()
         self.btn_add = QPushButton("Add account")
+        self.btn_add.setObjectName("primary")
         self.btn_connect = QPushButton("Connect")
         self.btn_disconnect = QPushButton("Disconnect")
         self.btn_edit = QPushButton("Edit")
